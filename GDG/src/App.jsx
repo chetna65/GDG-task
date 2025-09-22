@@ -1,35 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Navbar from "./components/Navbar"
+import Intro from "./components/Intro";
+import Section from "./components/Section";
+import Stats from "./components/Stats";
+import Technologies from "./components/Technologies";
+import FAQ from "./components/FAQ";
+import Footer from "./components/Footer";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+      <Navbar />
+      <Intro />
+      <Section
+        title="Get to Know Us!"
+        text="GDGs are communities for developers to connect, learn and grow..."
+        img="get-to-know.png"
+        reverse={false}
+      />
+      <Section
+        title="Our Purpose"
+        text="We aim to bring developers together and provide resources..."
+        img="purpose.png"
+        reverse={true}
+      />
+      <Section
+        title="What Events to Expect?"
+        text="Workshops, hackathons, speaker sessions and much more..."
+        img="events.png"
+        reverse={false}
+      />
+      <Stats />
+      <Technologies />
+      <FAQ />
+      <Footer />
+    </div>
+  );
 }
-
-export default App
