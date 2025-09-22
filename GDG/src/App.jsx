@@ -11,7 +11,8 @@ export default function App() {
     <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
       <Navbar />
       <Intro />
-      <Section
+      <Section />
+      {/* <Section
         title="Our Mission"
         text="Our mission involves community engagement, leadership development, building strong tech foundation, while enabling all tech enthusiasts to contribute to the global society."
         img="/our-mission.png"
@@ -28,7 +29,7 @@ export default function App() {
         text="Our club helps students to connect, learn, empower and grow. Teamwork, innovative thinking, communication, and leading with solutions is what helps us achieve new heights. The entire team works in coordination, to inspire and motivate the upcoming coding community to evolve their skills and broaden their horizons of knowledge."
         img="/keep-going.png"
         reverse={false}
-      />
+      /> */}
       <Stats />
       <Technologies />
       <FAQ />
