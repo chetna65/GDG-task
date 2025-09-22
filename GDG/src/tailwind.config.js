@@ -10,3 +10,10 @@ export default {
   },
   plugins: [],
 }
+theme: {
+  extend: {
+    fontFamily: {
+      product: ["Product Sans", "sans-serif"]
+    }
+  }
+}

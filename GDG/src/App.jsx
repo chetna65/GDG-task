@@ -12,19 +12,19 @@ export default function App() {
       <Navbar />
       <Intro />
       <Section
-        title="Get to Know Us!"
+        title="Our Mission"
         text="GDGs are communities for developers to connect, learn and grow..."
         img="get-to-know.png"
         reverse={false}
       />
       <Section
-        title="Our Purpose"
+        title="Our Perspective"
         text="We aim to bring developers together and provide resources..."
         img="purpose.png"
         reverse={true}
       />
       <Section
-        title="What Events to Expect?"
+        title="What Keeps Us Going"
         text="Workshops, hackathons, speaker sessions and much more..."
         img="events.png"
         reverse={false}

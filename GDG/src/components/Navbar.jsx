@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import { Sun, Moon } from "lucide-react" 
 
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [darkMode, setDarkMode] = useState(false)
@@ -19,33 +20,27 @@ export default function Navbar() {
 
   return (
     <nav className="bg-white dark:bg-gray-900 shadow-md sticky top-0 z-50">
-      <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-        
-        {/* Logo */}
-        <div className="flex items-center space-x-2">
-          <img 
-            src="/gdg-logo.png" 
-            alt="GDG Logo" 
-            className="h-[50px] w-auto"
-          />
-          <span className="text-xl font-bold text-blue-600">GDG</span>
+      <div className="h-[70px] container mx-auto px-6 py-4 flex items-center justify-between">
+    
+
+        <div className="flex items-center space-x-4">
+          <img src="/gdg-logo.png" className="h-[35px] w-[75px] " />
+            &nbsp;&nbsp;
+          <span className="ml-2 font-[Product Sans] font-normal text-[21.88px] leading-[100%] tracking-[3%] text-[#868686]">GDG RCOEM</span>
         </div>
 
-        {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6">
-          <a href="#about" className="hover:text-blue-600">About</a>
-          <a href="#purpose" className="hover:text-blue-600">Purpose</a>
-          <a href="#events" className="hover:text-blue-600">Events</a>
-          <a href="#tech" className="hover:text-blue-600">Technologies</a>
-          <a href="#faq" className="hover:text-blue-600">FAQ</a>
+          <a href="#" className="hover:text-blue-600">Home</a>
+          <a href="#" className="hover:text-blue-600">Events</a>
+          <a href="#" className="hover:text-blue-600">Team</a>
+          <a href="#" className="hover:text-blue-600">Alumni</a>
+          <a href="#" className="hover:text-blue-600">Contact</a>
         </div>
 
-        {/* Actions */}
         <div className="flex items-center gap-4">
-          {/* 🌞/🌙 Dark Mode Toggle */}
           <button
             onClick={toggleDarkMode}
-            className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition"
+            className="h-[36px] w-[90px] p-2 rounded-full  bg-[#7A7A7A] dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition"
           >
             {darkMode ? (
               <Sun className="w-5 h-5 text-yellow-400" />
@@ -54,7 +49,6 @@ export default function Navbar() {
             )}
           </button>
 
-          {/* Mobile Hamburger */}
           <button 
             className="md:hidden focus:outline-none" 
             onClick={() => setIsOpen(!isOpen)}
@@ -75,7 +69,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Dropdown */}
       {isOpen && (
         <div className="md:hidden bg-white dark:bg-gray-900 px-6 py-4 space-y-3">
           <a href="#about" className="block hover:text-blue-600">About</a>
