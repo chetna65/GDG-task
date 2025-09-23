@@ -1,31 +1,46 @@
-export default function Intro() 
-{
-  return (
-    <section className="text-center py-16">
-      <div className="absolute top-[190px] left-[233px] font-[Product Sans] font-bold text-[84.99px] leading-[100%] tracking-[0%]">
-        <span className="text-[#4285F4]">G</span> 
-        <span className="text-[#EA4335]">o</span>
-        <span className="text-[#FBBC04]">o</span>
-        <span className="text-[#4285F4]">g</span>
-        <span className="text-[#34A853]">l</span>
-        <span className="text-[#EA4335]">e</span>
-        &nbsp;
-        <span>Developer Groups</span>
+import "tailwindcss";
+export default function Intro() { 
+  return ( 
+  <section className="min-h-screen flex flex-col items-center justify-center text-center px-6 pt-8 pb-12"> 
+  <div className="font-[Product Sans] font-bold tracking-tight text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight mb-1"> 
+    <span className="text-[#4285F4]">G</span> 
+    <span className="text-[#EA4335]">o</span> 
+    <span className="text-[#FBBC04]">o</span> 
+    <span className="text-[#4285F4]">g</span> 
+    <span className="text-[#34A853]">l</span> 
+    <span className="text-[#EA4335]">e</span> 
+    &nbsp; 
+    <span className="text-black dark:text-gray-100">Developer Groups</span> 
+  </div>
+
+    <p className="font-[Product Sans] font-normal text-base sm:text-xl md:text-2xl lg:text-3xl leading-tight text-[#646464] mb-8">RBU Chapter</p> 
+    <div className="flex justify-center">
+      <img src="/OBJECTS.png" alt="Hero" className="w-[320px] sm:w-[380px] md:w-[440px] lg:w-[520px] h-auto"/>
+    </div>
+    <div className="w-40 sm:w-48 h-px bg-gray-300 mt-4 mb-2"></div>
+
+    <p className="text-center text-[15px] sm:text-base md:text-lg text-gray-600 dark:text-gray-300 max-w-xl mx-auto leading-relaxed mb-10 font-[Product Sans]">
+       Google Developer Groups are community groups for college<br></br> 
+       and university students interested in Google developer<br></br> 
+       technologies. 
+    </p> 
+    <br></br>
+    <div className="mb-8">
+      <div className="px-14 py-4 bg-[#4285F4] hover:bg-[#1A73E8] text-white font-extrabold tracking-wide uppercase text-lg sm:text-xl rounded-full shadow-md transition-colors min-w-[180px]">
+        JOIN US
       </div>
-      <p className="absolute top-[283px] left-[551px] font-[Product Sans] font-bold text-[50px] leading-[100%] tracking-[0%] text-[#646464]">RBU Chapter</p>
-      <img src="/OBJECTS.png" alt="Hero" className="absolute top-[395px] left-[414px] h-[373px] w-[613px] " />
-      <p className="absolute top-[790px] left-[272px] text-gray-600 dark:text-gray-300 font-[Product Sans] font-normal text-[35px] leading-[100%] tracking-[3%]">
-        Google Developer Student Clubs are community groups for college<br></br> and university students interested in Google developer<br></br> technologies.
-      </p>
-      <button className="absolute top-[1000px] left-[615px] w-[244px] h-[70px] bg-blue-500 hover:bg-blue-600 text-white font-bold text-[30px] rounded-lg shadow-lg">JOIN US</button>
-
-      <img src="/arrow1.png" className="absolute top-[1133px] left-[707px]"/>
-      <img src="/arrow2.png" className="absolute top-[1171px] left-[707px]"/>
-      <img src="/arrow3.png" className="absolute top-[1209px] left-[707px]"/>
-
-      <p className="absolute top-[1279px] left-[512px] font-[Product Sans] font-bold text-[60px] leading-[150%] tracking-[-2.2%] text-[#5F5F5F]">Get To Know Us!</p>
-      {/* <p className="absolute top-[1444px] left-[592px] font-[Product Sans] font-bold text-[50px] leading-[150%] tracking-[-2.2%] text-[#5F5F5F]">Our Mission</p>
-      <img src="/blue-line.png" className="absolute top-[1540px] left-[624px]"></img> */}
-    </section>
-  );
+    </div>    
+    <br></br>
+    <div className="flex flex-col items-center space-y-2 my-5">
+      <img src="/arrow1.png" alt="arrow1" className="w-8 h-8 sm:w-9 sm:h-9" />
+      <img src="/arrow2.png" alt="arrow2" className="w-8 h-8 sm:w-9 sm:h-9" />
+      <img src="/arrow3.png" alt="arrow3" className="w-8 h-8 sm:w-9 sm:h-9" />
+    </div>
+    <br></br>
+    <p className="mt-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-[Product Sans] font-bold text-[#5F5F5F]">
+      Get To Know Us!
+    </p>
+    <br></br>
+  </section> 
+  ); 
 }
