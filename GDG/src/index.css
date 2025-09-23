@@ -6,6 +6,10 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Hide scrollbars for custom carousels */
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+.hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
 /* body {
   @apply bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100;
   font-family: 'Inter', sans-serif;
