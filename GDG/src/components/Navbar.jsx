@@ -31,10 +31,15 @@ export default function Navbar() {
 
         <div className="hidden md:flex space-x-6">
           <a href="#" className="hover:text-blue-600">Home</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <a href="#" className="hover:text-blue-600">Events</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <a href="#" className="hover:text-blue-600">Team</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <a href="#" className="hover:text-blue-600">Alumni</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <a href="#" className="hover:text-blue-600">Contact</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </div>
 
         <div className="flex items-center gap-4">

@@ -6,7 +6,7 @@ export default function FAQ() {
   ];
 
   return (
-    <section className="py-16 px-6 md:px-16">
+    <section className="absolute top-[5373px] py-16 px-6 md:px-16 ">
       <h2 className="text-2xl font-semibold text-center mb-8">FAQs</h2>
       <div className="space-y-4 max-w-2xl mx-auto">
         {faqs.map((f, i) => (
